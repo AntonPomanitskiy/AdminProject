@@ -1,0 +1,6 @@
+<jdbc-setting>
+	<db-user-name>pomanitskiy</db-user-name>
+	<db-user-password>qwerty</db-user-password>
+	<driver-class-name>org.postgresql.Driver</driver-class-name>
+	<url>jdbc:postgresql://localhost:5432/adminproject</url>
+</jdbc-setting>

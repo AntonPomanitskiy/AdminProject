@@ -1,0 +1,11 @@
+<dataset>
+
+	<role id="1" name="admin" />
+	<role id="2" name="buyer" />
+	<role id="3" name="observer" />
+
+	<user id="1" first_name="anton" last_name="pomanitskiy" login="pomanitz" email="pomanitzz@gmail.com" password="qwerty" birth_date="1996-08-07" role_id="1"/>
+	
+	<user id="2" first_name="roman" last_name="shirokov" login="shirokovv" email="shirokov@mail.ru" password="12345" birth_date="1990-02-22" role_id="2"/>
+
+</dataset>

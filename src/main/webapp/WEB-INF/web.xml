@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>ua.pomanitskiy.web.servlets.MainServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/MainServlet</url-pattern> <!-- -->
+    </servlet-mapping>
+
+<!-- _____________________________________________________________________________________ -->
+
+    <filter>
+        <filter-name>InitFilter</filter-name>
+        <filter-class>ua.pomanitskiy.web.filters.InitFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>UserCheckFilter</filter-name>
+        <filter-class>ua.pomanitskiy.web.filters.UserCheckFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>AdminCheckFilter</filter-name>
+        <filter-class>ua.pomanitskiy.web.filters.AdminCheckFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>SignUpFilter</filter-name>
+        <filter-class>ua.pomanitskiy.web.filters.SignUpFilter</filter-class>
+    </filter>
+<!-- ???????????????????????????????????????????????????????????? -->
+    <filter-mapping>
+        <filter-name>SignUpFilter</filter-name>
+        <url-pattern>/SignUpServlet</url-pattern><!-- ????? -->
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>InitFilter</filter-name>
+        <url-pattern>/MainServlet</url-pattern><!-- ????? -->
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>UserCheckFilter</filter-name>
+       <!-- <url-pattern>/</url-pattern> -->
+         <url-pattern>/MainServlet</url-pattern> <!--????? -->
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>AdminCheckFilter</filter-name>
+        <!--<url-pattern>/</url-pattern>-->
+         <url-pattern>/MainServlet</url-pattern>
+    </filter-mapping>
+
+</web-app>

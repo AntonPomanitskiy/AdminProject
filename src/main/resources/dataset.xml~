@@ -1,0 +1,10 @@
+<dataset>
+
+	<role id="1" name="role1" />
+	<role id="2" name="role2" />
+	<role id="3" name="role3" />
+
+	<user id="1" first_name="fn1" last_name="ln1" login="log1" email="asf@db.pv" password="pass1" birth_date="2011-01-11" role_id="1"/>
+	<user id="2" first_name="fn2" last_name="ln2" login="log2" email="kld@fm.ds" password="pass2" birth_date="2012-02-22" role_id="2"/>
+
+</dataset>
